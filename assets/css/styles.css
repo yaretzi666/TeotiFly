@@ -1,0 +1,148 @@
+/* --- RESET BÁSICO Y FUENTE --- */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+body {
+background-color: #f0f4f8;
+color: #333;
+}
+/* --- BARRA DE NAVEGACIÓN SIMPLE (<nav>) --- */
+.menu-principal {
+background-color: #1a365d;
+padding: 15px;
+}
+.menu-principal ul {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+.menu-principal a {
+    color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 16px;
+border-radius: 4px;
+}
+.menu-principal a:hover,
+.menu-principal a.activo {
+background-color: #2b6cb0;
+}
+/* --- PÁGINA DE INICIO (LOGO CENTRADO EN EL BODY) --- */
+.contenido-inicio {
+text-align: center;
+padding: 50px 20px;
+}
+.logo-central {
+width: 180px;
+height: auto;
+display: block;
+margin: 0 auto 20px auto; /* Centra la imagen en el body */
+}
+.contenido-inicio h1 {
+color: #1a365d;
+margin-bottom: 10px;
+}
+.contenido-inicio p {
+font-size: 1.1rem;
+color: #555;
+}
+/* --- REJILLA DE 6 PAQUETES (CSS GRID) --- */
+.contenedor-principal {
+max-width: 1000px;
+margin: 30px auto;
+padding: 0 20px;
+}
+.titulo-seccion {
+text-align: center;
+color: #1a365d;
+margin-bottom: 25px;
+}
+.rejilla-paquetes {
+display: grid;
+/* Genera columnas automáticas según el tamaño de la pantalla */
+grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+gap: 80px;
+}
+.tarjeta {
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 20px;
+text-align: center;
+}
+.tarjeta h3 {
+color: #2b6cb0;
+margin-bottom: 10px;
+}
+.tarjeta p {
+color: #666;
+margin-bottom: 10px;
+}
+.tarjeta .precio {
+font-weight: bold;
+color: #dd6b20;
+font-size: 1.2rem;
+}
+/* --- FORMULARIO DE RESERVAS --- */
+.formulario-reserva {
+background-color: white;
+max-width: 450px;
+margin: 0 auto;
+padding: 25px;
+border-radius: 8px;
+border: 1px solid #ddd;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.formulario-reserva input,
+.formulario-reserva select 
+.formulario-reserva textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #2555da;
+border-radius: 5px;
+font-size: 1rem;
+}
+.formulario-reserva textarea {
+resize: vertical;
+}
+.formulario-reserva button {
+padding: 12px 24px;
+background-color: #378e91;
+border: 1px solid #2555da;
+border: none;
+border-radius: 5px;
+font: radius 5px;
+font-size: 1rem;
+cursor: pointer;
+}
+/* --- BOTONES Y PIE DE PÁGINA --- */
+.boton-enlace,
+.boton-tarjeta,
+.boton-enviar {
+display: inline-block;
+background-color: #2b6cb0;
+color: white;
+padding: 10px 18px;
+text-decoration: none;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+.boton-enlace:hover,
+.boton-tarjeta:hover,
+.boton-enviar:hover {
+background-color: #1a365d;
+}
+footer {
+text-align: center;
+padding: 20px;
+background-color: #e2e8f0;
+margin-top: 40px;
+font-size: 0.9rem;}
