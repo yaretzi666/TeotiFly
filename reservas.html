@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeotiFly | Reservas</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<nav class="menu-principal">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="paquetes.html">Paquetes</a></li>
+<li><a href="reservas.html" class="activo">Reservas</a></li>
+</ul>
+</nav>
+<main class="contenedor-principal">
+<h1 class="titulo-seccion">Formulario de Reservación</h1>
+<form class="formulario-reserva">
+<label for="nombre">Nombre completo:</label>
+<input type="text" id="nombre" name="nombre" required placeholder="Escribe tu
+nombre">
+<label for="Edad">Edad:</label>
+<input type="text" id="Edad" name="Edad" required placeholder="Escribe tu 
+Edad">
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" required
+placeholder="correo@ejemplo.com">
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono"required placeholder="Escribe tu
+teléfono" >
+<label for="personas">Número de pasajeros:</label>
+<input type="number" id="personas" name="personas" min="1" max="10"  required placeholder="Escribe tu
+Número de pasajeros" >
+<label for="paquete">Selecciona el paquete:</label>
+<select id="paquete" name="paquete">
+<option value="tradicional">Vuelo Tradicional</option>
+<option value="pareja">Vuelo Privado Pareja</option>
+<option value="familiar">Vuelo Familiar</option>
+<option value="desayuno">Vuelo con Desayuno</option>
+<option value="amigos">Vuelo Entre Amigos</option>
+<option value="vip">Vuelo VIP Todo Incluido</option>
+</select>
+<label for="fecha">Fecha del vuelo:</label>
+<input type="date" id="fecha" name="fecha" required>
+<label>Tipo de vuelo:</label>
+<label>
+<input type="radio" name="tipoVuelo" value="compartido">
+Compartido
+</label>
+<label>
+<input type="radio" name="tipoVuelo" value="privado">
+Privado
+</label>
+<label>Servicios adicionales:</label>
+<label>
+<input type="checkbox" name="desayuno">
+Desayuno
+</label>
+<label>
+<input type="checkbox" name="fotografia">
+Fotografía
+</label>
+<label>
+<input type="checkbox" name="traslado">
+Traslado
+</label>
+<label for="comentarios">Comentarios:</label>
+<textarea
+id="comentarios"
+name="comentarios"
+rows="4"
+placeholder="Escribe alguna solicitud especial">
+</textarea>
+
+<button type="submit" class="boton-enviar">Enviar Reserva</button>
+</form>
+</main>
+<footer>
+<p>CETIS N° 141 - Submódulo 1: Construye Aplicaciones Web</p>
+</footer>
+</body>
+</html>
